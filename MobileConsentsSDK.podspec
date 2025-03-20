@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   # Swift/Objective-C compatibility
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
+    "USE_HEADERMAP" => 'YES',
     'SWIFT_COMPILATION_MODE' => 'wholemodule'
   }
 end
