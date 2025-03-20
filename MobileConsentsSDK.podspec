@@ -11,4 +11,9 @@ Pod::Spec.new do |spec|
   spec.resource_bundle = {'MobileConsentsSDK' => 'Sources/MobileConsentsSDK/Resources/*'}
   spec.swift_version = '5.0'
 
+  # Swift/Objective-C compatibility
+  spec.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'SWIFT_COMPILATION_MODE' => 'wholemodule'
+  }
 end
